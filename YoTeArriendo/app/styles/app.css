@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'gotham';
+  src: url('/assets/fonts/Gotham-Thin.otf') format('truetype');
+  font-weight: bold;
+  font-style: bold;
+}
+@font-face {
+  font-family: 'helveticaNeue';
+  src: url('/assets/fonts/HelveticaNeue-Roman.otf') format('truetype');
+  font-weight: bold;
+  font-style: bold;
+}
+@font-face {
+  font-family: 'symbah';
+  src: url('/assets/fonts/Symbah-Regular.otf') format('truetype');
+  font-weight: bold;
+  font-style: bold;
+}
