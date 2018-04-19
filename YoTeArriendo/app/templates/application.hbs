@@ -1,22 +1,31 @@
+<button type="button" class="button">Dark</button>
+
+
 <center>
-	<br><br><br><br>
+	<br>
 	<nav>
 		<img  src = "/assets/Image/logo4.png" height="30" width="30">
 		<font FACE="symbah">yoTeArriendo</font>
 		<font FACE="gotham">.com</font> &emsp;
-		<font FACE="gotham" color="white">
-	  		{{#link-to "route-inicio" class="button"}}Inicio{{/link-to}} &emsp;
-	  		{{#link-to "route-tours" class="button"}}Tours{{/link-to}} &emsp;
-	  		{{#link-to "route-hotel" class="button"}}Hoteles{{/link-to}} &emsp;
-	  		{{#link-to "route-cities" class="button"}}Ciudades{{/link-to}} &emsp;
-	  		{{#link-to "route-countries" class="button"}}Paises{{/link-to}} &emsp;
-	  		{{#link-to "route-profile" class="button"}}Perfil{{/link-to}} &emsp;
+		<font FACE="gotham">
+			    <button onclick="location.href='/inicio';">Inicio</button> &emsp;
+				<button onclick="location.href='/tours';">Tours</button> &emsp;
+				<button onclick="location.href='/hotels';">Hoteles</button> &emsp;
+				<button onclick="location.href='/cities';">Ciudades</button> &emsp;
+				<button onclick="location.href='/countries';">Paises</button> &emsp;
+				<button onclick="location.href='/profile';">Perfil</button> &emsp;
   		</font>
+
 	</nav>
 </center>
 
 {{outlet}}
 
-<center>
-	<<font FACE="helveticaNeue">YoTeArriendo.com Todos los derechos reservados 2018 Medellin, Antioquia</font><img  src = "/assets/Image/logo3.png" height="30" width="30">
-</center>
+<footer>
+	<br><br>
+	<div>
+	<center>
+		<font FACE="helveticaNeue">YoTeArriendo.com Todos los derechos reservados 2018 Medellin, Antioquia</font><img  src = "/assets/Image/logo3.png" height="30" width="30">
+	</center>
+	</div>
+</footer>
