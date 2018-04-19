@@ -53,13 +53,32 @@ button{
   background-color: white;
   bottom: 0;
   width: 100%;
-  height: 70px;
+  height: 50px;
   color: black;
   position:fixed;
   left:0px;
 }
 
+.itool {
+  position: relative;
+  display: inline-block;
+    border-bottom: 1px dotted black;
+}
 
+.itool .tool{
+  width: 120px;
+  position: absolute;
+  z-index: 1;
+  background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    visibility: hidden;
+}
 
+.itool:hover .tool {
+    visibility: visible;
+}
 .link { color: #fff; } 
 .link:hover { color: #fff; }
