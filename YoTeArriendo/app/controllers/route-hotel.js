@@ -41,7 +41,7 @@ export default Controller.extend({
     }),
     actions: {
         buscar(){
-            alert("Hay que colocar la funcionalidad");
+            alert("Crear funcionalidad");
         } 
-    }
+    },
 });

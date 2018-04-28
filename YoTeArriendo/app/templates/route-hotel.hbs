@@ -25,4 +25,22 @@
   </form>
   <br><br>
   <button {{action "buscar"}}>Buscar</button>
+  {{#each model as |agencia|}}
+    <p style="color:white;font-size:2em;">Agencia: {{agencia.agency.name}}</p>
+    {{#each agencia.homes as |rental|}}
+    <form>
+      <fieldset style="color:white;background-color: steelblue;">
+        <legend style="color:white;font-size:1.3em;">{{rental.name}}</legend>
+          <p style="color:white;background-color: steelblue;">Descripcion: {{rental.description}}</p>
+          <p style="color:white;background-color: steelblue;">Direccion: {{rental.location.address}}</p>
+          <p style="color:white;background-color: steelblue;">Ciudad: {{rental.city}}</p>
+          <p style="color:white;background-color: steelblue;">Tipo: {{rental.type}}</p>
+          <p style="color:white;background-color: steelblue;">Precio Total: {{rental.totalAmount}}</p>
+          <p style="color:white;background-color: steelblue;">Precio Por Noche: {{rental.pricePerNight}}</p>
+          <img src={{rental.thumbnail}} width="250" height="180"/>
+      </fieldset>
+    </form>
+    <br>
+    {{/each}}
+  {{/each}}
 </center>
